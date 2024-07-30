@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href='product.xsl' type='text/xsl'?>
+<!DOCTYPE products [
+    <!ELEMENT products (Item*)>
+    <!ELEMENT Item (ID, name, Detail, price, QTY)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT Detail (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT QTY (#PCDATA)>
+]>
+<products>
+    <Item>
+        <ID>Moo101</ID>
+        <name>หมูกรอบไซส์ S</name>
+        <Detail>หมูกรอบขนาด 350 กรัม (3.5 ขีด) ฟรี ซอสดิป 1 รสชาติ</Detail>
+        <price>270</price>
+        <QTY>50</QTY>
+    </Item>
+    <Item>
+        <ID>Moo102</ID>
+        <name>หมูกรอบไซส์ M</name>
+        <Detail>หมูกรอบขนาด 500 กรัม (5 ขีด) ฟรี ซอสดิป 2 รสชาติ</Detail>
+        <price>450</price>
+        <QTY>50</QTY>
+    </Item>
+    <Item>
+        <ID>Moo201</ID>
+        <name>ขาหมู Set A</name>
+        <Detail>ขาหมูราดข้าวพร้อมไข่ เลือกได้ เนื้อ หนัง ไส้ 3 จาน</Detail>
+        <price>250</price>
+        <QTY>50</QTY>
+    </Item>
+    <Item>
+        <ID>Moo202</ID>
+        <name>ขาหมู Set B</name>
+        <Detail>ขาหมู 550 กรัม (5.5 ขีด) เลือกได้ เนื้อ หนัง ไส้ พร้อมไข่ 4 ลูก + ข้าวสวย 4 จาน + ชาเขียวเย็น 2 แก้ว</Detail>
+        <price>450</price>
+        <QTY>30</QTY>
+    </Item>
+    <Item>
+        <ID>Moo001</ID>
+        <name>ซอส ดิป</name>
+        <Detail>มี 4 รสชาติ ซาวครีม ชีส บาร์บีคิว หม่าล่า</Detail>
+        <price>20</price>
+        <QTY>100</QTY>
+    </Item>
+</products>

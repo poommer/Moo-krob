@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="employee.xsl" type="text/xsl"?>
+<!DOCTYPE employees [
+    <!ELEMENT employees (person*)>
+    <!ELEMENT person (ID, firstName, lastName, email, tel)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT firstName (#PCDATA)>
+    <!ELEMENT lastName (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT tel (#PCDATA)>
+]>
+<employees>
+    <person>
+        <ID>001</ID>
+        <firstName>Alex</firstName>
+        <lastName>Johnson</lastName>
+        <email>alex.johnson@example.com</email>
+        <tel>081-123-4567</tel>
+    </person>
+    <person>
+        <ID>002</ID>
+        <firstName>Emma</firstName>
+        <lastName>Thompson</lastName>
+        <email>emma.thompson@example.com</email>
+        <tel>082-234-5678</tel>
+    </person>
+    <person>
+        <ID>003</ID>
+        <firstName>Michael</firstName>
+        <lastName>Davis</lastName>
+        <email>michael.davis@example.com</email>
+        <tel>083-345-6789</tel>
+    </person>
+    <person>
+        <ID>004</ID>
+        <firstName>Sophia</firstName>
+        <lastName>Wilson</lastName>
+        <email>sophia.wilson@example.com</email>
+        <tel>084-456-7890</tel>
+    </person>
+    <person>
+        <ID>005</ID>
+        <firstName>Ethan</firstName>
+        <lastName>Martinez</lastName>
+        <email>ethan.martinez@example.com</email>
+        <tel>085-567-8901</tel>
+    </person>
+</employees>

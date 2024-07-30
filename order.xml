@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="order.xsl" type="text/xsl"?>
+<!DOCTYPE orders [
+    <!ELEMENT orders (order*)>
+    <!ELEMENT order (date, cusTel, Item, QTY, amount)>
+    <!ELEMENT date (#PCDATA)>
+    <!ELEMENT cusTel (#PCDATA)>
+    <!ELEMENT Item (#PCDATA)>
+    <!ELEMENT QTY (#PCDATA)>
+    <!ELEMENT amount (#PCDATA)>
+]>
+<orders>
+    <order>
+        <date>15/7/2024</date>
+        <cusTel>0905678901</cusTel>
+        <Item>Moo101</Item>
+        <QTY>2</QTY>
+        <amount>540</amount>
+    </order>
+    <order>
+        <date>16/7/2024</date>
+        <cusTel>0872345678</cusTel>
+        <Item>Moo102</Item>
+        <QTY>1</QTY>
+        <amount>450</amount>
+    </order>
+    <order>
+        <date>16/7/2024</date>
+        <cusTel>0883456789</cusTel>
+        <Item>Moo201</Item>
+        <QTY>2</QTY>
+        <amount>500</amount>
+    </order>
+    <order>
+        <date>16/7/2024</date>
+        <cusTel>0894567890</cusTel>
+        <Item>Moo202</Item>
+        <QTY>1</QTY>
+        <amount>450</amount>
+    </order>
+    <order>
+        <date>16/7/2024</date>
+        <cusTel>0905678901</cusTel>
+        <Item>Moo001</Item>
+        <QTY>2</QTY>
+        <amount>40</amount>
+    </order>
+</orders>

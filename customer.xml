@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="customer.xsl" type="text/xsl"?>
+
+<!DOCTYPE customers [
+    <!ELEMENT customers (person*)>
+    <!ELEMENT person (Fname, Lname, birthday, email, tel)>
+    <!ELEMENT Fname (#PCDATA)>
+    <!ELEMENT Lname (#PCDATA)>
+    <!ELEMENT birthday (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT tel (#PCDATA)>
+]>
+
+<customers>
+    <person>
+        <Fname>John</Fname>
+        <Lname>Doe</Lname>
+        <birthday>1985-05-20</birthday>
+        <email>john.doe@example.com</email>
+        <tel>086-123-4567</tel>
+    </person>
+
+    <person>
+        <Fname>Jane</Fname>
+        <Lname>Smith</Lname>
+        <birthday>1990-08-15</birthday>
+        <email>jane.smith@example.com</email>
+        <tel>087-234-5678</tel>
+    </person>
+    <person>
+        <Fname>David</Fname>
+        <Lname>Johnson</Lname>
+        <birthday>1982-11-30</birthday>
+        <email>david.johnson@example.com</email>
+        <tel>088-345-6789</tel>
+    </person>
+    <person>
+        <Fname>Sarah</Fname>
+        <Lname>Williams</Lname>
+        <birthday>1989-04-25</birthday>
+        <email>sarah.williams@example.com</email>
+        <tel>089-456-7890</tel>
+    </person>
+    <person>
+        <Fname>Michael</Fname>
+        <Lname>Brown</Lname>
+        <birthday>1987-01-10</birthday>
+        <email>michael.brown@example.com</email>
+        <tel>090-567-8901</tel>
+    </person>
+    
+</customers>
