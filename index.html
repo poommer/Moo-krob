@@ -23,6 +23,16 @@
             color: none;
         }
 
+        button{
+            cursor: pointer;
+            outline: none;
+            border: none;
+            height: 2rem;
+            background-color: #c2c2c2;
+            border-radius: 0.25rem;
+            color: #004e3f;
+        }
+
     </style>
     <script src="script.js"></script>
 </head>
@@ -36,26 +46,78 @@
     </a>
 
     <div style="display: flex; gap: 1rem;">
-        <a href="product.xml" target="_blank">product</a>
-        <a href="order.xml" target="_blank">order</a>
-        <a href="customer.xml" target="_blank">customer</a>
-        <a href="employee.xml" target="_blank">employee</a>
         <a href="contact.html" >contact</a>
     </div>
    </nav>
 
    <main style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-     <button onclick="loadData()">load data...</button>
-    <h1 id="demo1"></h1>
-    <table id="table_product" border="1">
-        <tr style="background: #008695; width:100%; color: #fff;   text-align:left; font-size:18px;">
-            <th style="padding-left:15px;">ID</th>
-            <th>name product</th>
-            <th>Details</th>
-            <th>price</th>
-            <th>QTY</th>
-        </tr>
+     
+     
+    <div style=" width: 60%;">
+        <div style="display: flex;align-items: center; gap: 10px;">
+            <h1 id="text-head">product</h1>
+            <button onclick="loadData('product')">load data...</button>
+        </div>
+        <table id="table_product" border="1"  style="border: none; border-collapse: collapse; width:100%; overflow: hidden;     box-shadow: 2px 2px 8px 2px #4a4a4a4d;">
+            <tr style="background: #008695; width:100%; color: #fff;   text-align:left; font-size:18px;">
+                <th style="width:15%;">รหัสสินค้า</th>
+                <th style="width:15%;">ชื่อสินค้า</th>
+                <th style="width:30%;">รายละเอียด</th>
+                <th style="width:20%;">ราคา</th>
+                <th style="width:20%;">คงเหลือ</th>
+            </tr>
         </table>
+    </div>
+
+    <div style=" width: 60%; margin-top: 1rem;">
+        <div style="display: flex;align-items: center; gap: 10px;">
+            <h1 id="text-head">customer</h1>
+            <button onclick="loadData('customer')">load data...</button>
+        </div>
+        <table id="table_customer" border="1"  style="border: none; border-collapse: collapse; width:100%; overflow: hidden;     box-shadow: 2px 2px 8px 2px #4a4a4a4d;">
+            <tr style="background: #008695; width:100%; color: #fff;   text-align:left; font-size:18px;">
+                <th style="width:20%;">ชื่อจริง</th>
+            <th style="width:20%;">นามสกุล</th>
+            <th style="width:20%;">วันเกิด</th>
+            <th style="width:20%;">E-mail</th>
+            <th style="width:20%;">เบอร์โทรศัพท์</th>
+            </tr>
+        </table>
+    </div>
+
+    <div style=" width: 60%; margin-top: 1rem;">
+        <div style="display: flex;align-items: center; gap: 10px;">
+            <h1 id="text-head">employee</h1>
+            <button onclick="loadData('employee')">load data...</button>
+        </div>
+        <table id="table_employee" border="1"  style="border: none; border-collapse: collapse; width:100%; overflow: hidden;     box-shadow: 2px 2px 8px 2px #4a4a4a4d;">
+            <tr style="background: #008695; width:100%; color: #fff;   text-align:left; font-size:18px;">
+                <th style="width:20%;">รหัสพนักงาน</th>
+                <th style="width:20%;">ชื่อจริง</th>
+                <th style="width:20%;">นามสกุล</th>
+                <th style="width:20%;">E-mail</th>
+                <th style="width:20%;">เบอร์โทรศัพท์</th>
+            </tr>
+        </table>
+    </div>
+    
+    <div style=" width: 60%; margin-top: 1rem;">
+        <div style="display: flex;align-items: center; gap: 10px;">
+            <h1 id="text-head">order</h1>
+            <button onclick="loadData('order')">load data...</button>
+        </div>
+        <table id="table_order" border="1"  style="border: none; border-collapse: collapse; width:100%; overflow: hidden;     box-shadow: 2px 2px 8px 2px #4a4a4a4d;">
+            <tr style="background: #008695; width:100%; color: #fff;   text-align:left; font-size:18px;">
+                <th style="width:20%;">วันที่</th>
+            <th style="width:20%;">รหัสลูกค้า (เบอร์โทรศัพท์)</th>
+            <th style="width:20%;">รหัสสินค้า</th>
+            <th style="width:20%;">จำนวนสินค้า</th>
+            <th style="width:20%;">ราคารวม</th>
+            </tr>
+        </table>
+    </div>
+
+
    </main>
     
 </body>
